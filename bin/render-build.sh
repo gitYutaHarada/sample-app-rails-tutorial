@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+chmod a+x bin/*
 
 set -o errexit
 
