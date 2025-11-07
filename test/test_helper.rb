@@ -4,14 +4,13 @@ require "rails/test_help"
 require "minitest/reporters"
 Minitest::Reporters.use!
 
+ENV["RAILS_ENV"] ||= "test"
 module ActiveSupport
   class TestCase
-    # Run tests in parallel with specified workers
-    parallelize(workers: :number_of_processors, with: :threads)
-
-    # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
+    # 指定のワーカー数でテストを並列実行する
+    parallelize(workers: :number_of_processors)
     fixtures :all
-
+    include ApplicationHelper
     # Add more helper methods to be used by all tests here...
   end
 end
