@@ -17,6 +17,7 @@ gem "bootsnap", require: false
 gem "jsbundling-rails"
 gem "cssbundling-rails"
 gem "bootstrap-sass", "~> 3.4.1"
+gem "bcrypt", "~> 3.1.7"
 gem "image_processing", "~> 1.2"
 gem "kamal", require: false
 gem "thruster", require: false

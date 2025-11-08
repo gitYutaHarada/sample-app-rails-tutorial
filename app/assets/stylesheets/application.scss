@@ -1,5 +1,9 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
 
 // ここに追加のカスタム SCSS を記述可能
 
