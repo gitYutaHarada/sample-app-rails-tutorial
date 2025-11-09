@@ -2,6 +2,9 @@
 # exit on error
 set -o errexit
 
+# Fix permissions for bin files
+chmod +x bin/*
+
 bundle install
 # Remove cached node_modules to ensure clean install for Linux platform
 rm -rf node_modules
