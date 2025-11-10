@@ -23,7 +23,7 @@ gem "kamal", require: false
 gem "thruster", require: false
 
 group :development, :test do
-  gem "reline", "~> 0.5.10"
+  gem "reline", "~> 0.6.3"
   gem "debug", "~> 1.9", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "bundler-audit", require: false
   gem "brakeman", require: false
