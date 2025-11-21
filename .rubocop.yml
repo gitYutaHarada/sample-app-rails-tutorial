@@ -1,8 +1,36 @@
 # Omakase Ruby styling for Rails
 inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 
-# Overwrite or add rules to create your own house style
-#
-# # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
+# プロジェクト独自の設定・上書きはこの下に書く
+
+# 例: 新しい Cop でエラーになりがちなものを無効化
+# 実際のエラーメッセージに出ている Cop 名に合わせて調整してください
+AllCops:
+  # ここで対象 Ruby バージョンを明示しておくと、バージョン不一致の警告を減らせます
+  TargetRubyVersion: 3.2
+  NewCops: disable
+
+# ここから下は、エラーの原因になっている Cop を順次追加して無効化していく想定です
+
+# 例: 複雑なメソッドを禁止する Cop が厳しすぎる場合
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+# 例: RSpec / Minitest を使っていないのに Test ファイルの命名で怒られる場合
+RSpec/FilePath:
+  Enabled: false
+
+# 例: Rails 特有の長いコントローラーなどで頻繁に引っかかる場合
+Metrics/AbcSize:
+  Enabled: false
+
+# 例: String フリーズリテラルのマジックコメントが不要な場合
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Array のスペースルールの例（コメントにあったもの）
 # Layout/SpaceInsideArrayLiteralBrackets:
 #   Enabled: false
