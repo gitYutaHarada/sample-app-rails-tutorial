@@ -21,6 +21,9 @@ gem "bcrypt", "~> 3.1.7"
 gem "image_processing", "~> 1.2"
 gem "kamal", require: false
 gem "thruster", require: false
+gem "faker", "~> 3.2"
+gem "will_paginate", "~> 3.3"
+gem "bootstrap-will_paginate", "~> 1.0"
 
 group :development, :test do
   gem "reline", "~> 0.5.10"

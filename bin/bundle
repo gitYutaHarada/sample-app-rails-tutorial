@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+APP_ROOT = File.expand_path('..', __dir__)
+ENV['BUNDLE_GEMFILE'] ||= File.join(APP_ROOT, 'Gemfile')
+
+begin
+  require 'rubygems'
+  load Gem.bin_path('bundler', 'bundle')
+rescue Gem::LoadError
+  abort 'Bundler is not installed. Install it by running `gem install bundler`.'
+end
