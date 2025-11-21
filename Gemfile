@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby File.read(File.join(__dir__, ".ruby-version")).strip.sub(/\Aruby-/, "")
 
-gem "rails", "~> 7.1.3"
+gem "rails", "~> 8.1.1"
 gem "sassc-rails", "~> 2.1"
 gem "sprockets-rails", "~> 3.5"
 gem "importmap-rails", "~> 2.0"
