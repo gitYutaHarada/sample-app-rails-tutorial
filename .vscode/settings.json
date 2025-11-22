@@ -1,3 +1,7 @@
 {
-    "claudeCode.environmentVariables": []
+    "claudeCode.environmentVariables": [],
+    "[ruby]": {
+        "editor.formatOnType": false,
+        "editor.snippetSuggestions": "top"
+    }
 }

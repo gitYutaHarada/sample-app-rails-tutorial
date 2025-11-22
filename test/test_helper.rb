@@ -8,7 +8,7 @@ ENV["RAILS_ENV"] ||= "test"
 module ActiveSupport
   class TestCase
     # 指定のワーカー数でテストを並列実行する
-    parallelize(workers: :number_of_processors)
+    parallelize(workers: 1)
     fixtures :all
     include ApplicationHelper
     # Add more helper methods to be used by all tests here...
@@ -18,7 +18,7 @@ module ActiveSupport
     end
 
     def log_in_as(user)
-    endsession[:user_id] = user.id
+      session[:user_id] = user.id
     end
   end
 end
