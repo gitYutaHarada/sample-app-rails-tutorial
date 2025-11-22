@@ -14,12 +14,19 @@ class SessionsController < ApplicationController
     # ユーザをログインさせる
     # 元のURLにリダイレクト、元のURLがなければユーザのプロフィールページにリダイレクト
     if user && user.authenticate(params[:session][:password])
-      forwarding_url = session[:forwarding_url]
-      reset_session
-      params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-      log_in user
-      redirect_to forwarding_url || user
-
+      # emailでの有効かができているかどうか確認できていない場合はログインせずにroot_urlに飛ぶ
+      if user.activated?
+        forwarding_url = session[:forwarding_url]
+        reset_session
+        params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+        log_in user
+        redirect_to forwarding_url || user
+      else
+        message  = "Account not activated. "
+        message += "Check your email for the activation link."
+        flash[:warning] = message
+        redirect_to root_url
+      end
     # ログイン失敗
     # フラッシュメッセージにエラーメッセージを設定
     # ログインフォームを再表示、HTTPステータスコードとして422 Unprocessable Entityを返す
