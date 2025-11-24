@@ -1,0 +1,16 @@
+C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/reline-0.5.12/lib/reline/io/windows.rb:1: warning: C:/Ruby34-x64/lib/ruby/3.4.0/fiddle/import.rb is found in fiddle, which will no longer be part of the default gems starting from Ruby 3.5.0.
+You can add fiddle to your Gemfile or gemspec to silence this warning.
+Also please contact the author of reline-0.5.12 to request adding fiddle into its gemspec.
+
+Started with run options --seed 27494
+
+
+Progress: |C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/actionpack-7.1.6/lib/action_controller/metal/rendering.rb:207: warning: Status code :unprocessable_entity is deprecated and will be removed in a future version of Rack. Please use :unprocessable_content instead.
+=============C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/actionpack-7.1.6/lib/action_controller/metal/rendering.rb:207: warning: Status code :unprocessable_entity is deprecated and will be removed in a future version of Rack. Please use :unprocessable_content instead.
+=======C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/actionpack-7.1.6/lib/action_controller/metal/rendering.rb:207: warning: Status code :unprocessable_entity is deprecated and will be removed in a future version of Rack. Please use :unprocessable_content instead.
+C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/actionpack-7.1.6/lib/action_dispatch/testing/assertion_response.rb:39: warning: Status code :unprocessable_entity is deprecated and will be removed in a future version of Rack. Please use :unprocessable_content instead.
+C:/Ruby34-x64/lib/ruby/gems/3.4.0/gems/actionpack-7.1.6/lib/action_dispatch/testing/assertion_response.rb:39: warning: Status code :unprocessable_entity is deprecated and will be removed in a future version of Rack. Please use :unprocessable_content instead.
+================================================|
+
+Finished in 1.22736s
+10 tests, 19 assertions, 0 failures, 0 errors, 0 skips
