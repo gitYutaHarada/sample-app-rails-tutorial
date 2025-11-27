@@ -3,7 +3,8 @@
  *= require_self
  */
 
-@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 // ここに追加のカスタム SCSS を記述可能
 
