@@ -41,6 +41,7 @@ group :development do
   gem "guard"
   gem "guard-minitest"
   gem "guard-rubocop", require: false
+  gem "letter_opener"
   gem "wdm", ">= 0.1.1", platforms: %i[ mingw x64_mingw mswin ]
 end
 
