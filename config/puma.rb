@@ -8,7 +8,7 @@ pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 
 # Worker mode is not supported on Windows
 unless Gem.win_platform?
-  workers ENV.fetch("WEB_CONCURRENCY") { 4 }
+  workers ENV.fetch("WEB_CONCURRENCY") { 0 }
   preload_app!
 end
 

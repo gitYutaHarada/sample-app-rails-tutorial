@@ -19,6 +19,7 @@ gem "cssbundling-rails"
 gem "bootstrap-sass", "~> 3.4.1"
 gem "bcrypt", "~> 3.1.7"
 gem "image_processing", "~> 1.2"
+gem "active_storage_validations", "~> 1.1"
 gem "kamal", require: false
 gem "thruster", require: false
 gem "faker", "~> 3.2"
