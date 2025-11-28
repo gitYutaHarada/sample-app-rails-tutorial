@@ -27,7 +27,7 @@ gem "will_paginate", "~> 3.3"
 gem "bootstrap-will_paginate", "~> 1.0"
 
 group :development, :test do
-  gem "reline", "~> 0.5.10"
+  gem "reline", "~> 0.6.3"
   gem "debug", "~> 1.9", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "bundler-audit", require: false
   gem "brakeman", require: false
