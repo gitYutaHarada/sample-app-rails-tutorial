@@ -52,6 +52,12 @@ GEM
       erubi (~> 1.11)
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
+    active_storage_validations (1.4.0)
+      activejob (>= 6.1.4)
+      activemodel (>= 6.1.4)
+      activestorage (>= 6.1.4)
+      activesupport (>= 6.1.4)
+      marcel (>= 1.0.3)
     activejob (7.1.6)
       activesupport (= 7.1.6)
       globalid (>= 0.3.6)
@@ -137,6 +143,7 @@ GEM
     execjs (2.10.0)
     faker (3.5.2)
       i18n (>= 1.8.11, < 2)
+    ffi (1.17.2-arm64-darwin)
     ffi (1.17.2-x64-mingw-ucrt)
     ffi (1.17.2-x86_64-linux-gnu)
     formatador (1.2.2)
@@ -249,6 +256,8 @@ GEM
       net-protocol
     net-ssh (7.3.0)
     nio4r (2.7.5)
+    nokogiri (1.18.10-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.18.10-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.18.10-x86_64-linux-gnu)
@@ -262,6 +271,7 @@ GEM
     parser (3.3.10.0)
       ast (~> 2.4.1)
       racc
+    pg (1.6.2-arm64-darwin)
     pg (1.6.2-x64-mingw-ucrt)
     pg (1.6.2-x86_64-linux)
     pp (0.6.3)
@@ -431,6 +441,7 @@ GEM
     stringio (3.1.7)
     thor (1.4.0)
     thruster (0.1.16)
+    thruster (0.1.16-arm64-darwin)
     thruster (0.1.16-x86_64-linux)
     tilt (2.6.1)
     timeout (0.4.4)
@@ -467,10 +478,12 @@ GEM
     zeitwerk (2.7.3)
 
 PLATFORMS
+  arm64-darwin-24
   x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
+  active_storage_validations (~> 1.1)
   bcrypt (~> 3.1.7)
   bootsnap
   bootstrap-sass (~> 3.4.1)
