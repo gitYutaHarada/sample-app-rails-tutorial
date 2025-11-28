@@ -50,7 +50,7 @@ group :test do
   gem "capybara", "~> 3.40"
   gem "selenium-webdriver", ">= 4.6", "< 5.0"
   gem "rails-controller-testing", "~> 1.0"
-  gem "minitest", "~> 5.22"
+  gem "minitest", "~> 5.26"
   gem "minitest-reporters", "~> 1.6"
 end
 
